@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h2>DOKUMENTATION</h2><br></br>
+        (Jag vill bara förtydliga att bakgrundsfärgen är vit med mening men jag kan enkelt byta om det krävs):
+        Lektion 1: satte upp alla sidor, länkade<br></br>
+
+        Lektion 2: Började på en navbar, jag ångrade mig en hel del innan jag väl bestämde hur jag ville ha det, men bestämde mig för en sticky navbar
+        med en bild över som jag döpte till header. På varje sida la jag också till css klassen active för att byta bakgrundsfärg på den aktiva sidan<br></br>
+
+        Lektion 3: Jag fortsatte på navbaren, nestade in alla länkar runt divs, skapade alla klasser och css kod som krävdes. Jag började också på
+        bilden som jag använt mig av högst upp på sidan (header bild). Jag hade lite problem med hur jag skulle bygga upp 
+        detta men löste det med en outer container som centrerade allt innehåll horisontellt dessutom wrapade det. Jag blev inte heller helt nöjd med bilden
+        så jag sökte upp lite sätt att ändra den och lade till en blur, dessutom lite skuggor under navbaren i rött för att göra det mer estetiskt snyggt.<br></br>
+        
+        Lektion 4: Denna lektionen började jag med innehållet under "hem" knappen, det gick ganska fort att skapa en container runt 
+        allt innehåll och två items, en för bild och en för själva texten/rutan till vänster. Sedan testade jag runt lite för att göra dessa snyggare.<br></br>
+    
+        Lektion 5: Under denna lektion satte jag upp min footer. Det var ganska simpelt eftersom språket börjar bli lättare, jag fäste den på botten med
+        margin bottom, gjorde en container för allt innuti footern med justify content space around eftersom jag tyckte det blev snyggast och lättast att läsa.
+        I övrigt bytte jag lite färg, font familiy eftersom jag inte ville ha samma här som på resten av sidan, skapade en länk till "om oss" sidan och en liten
+        bild till höger för det estetiska.<br></br>
+        
+        Lektion 6: Under denna lektionen fixade jag produkt sidan. Denna sidan är ganska lik "hem" sidan, men jag stötte på ett ganska stort problem här.
+        Nämligen att jag ville ha en ruta för text och en bild per rad, och med mina gamla inställningar lade sig tre items på rad. Detta löste jag genom
+        flex basis 50%, men det tog mig en ganska lång stund att lista ut detta. När det var klart var det däremot väldigt simpelt att använda koden sen 
+        tidigare och lägga in fyra olika produkter, lite text och fyra olika passande bilder.<br></br>
+        
+        Lektion 7 (+ arbete utanför skolan):
+        Under lektionen arbetade jag hårt med att försöka fixa ett bildspel. Jag började med att skapa en test.html sida för att slippa råka ändra på fel 
+        grejer. Under den sidan försökte jag genom en tutorial på youtube skapa ett bildspel, men tyvärr blev den i helt fel skala och fungerade inte korrekt.
+        Istället hittade jag en kod för en javascript där man bytte bild med hjälp av två knappar och de sidorna inte som är aktiverade får "display: none"
+        Med hjälp av detta kunde jag använda samma kod och samma metod för att den text under bilden endast ska visas vid rätt bild. Det tog mig dock desto längre tid
+        att skapa alla de containers som behövdes. Efter mycket försök kom jag fram till en container för alla slides, och en klass för bilderna, en för text och en för knapparna.
+        Att placera knapparna till höger respektive vänster om bilden var också något jag hade lite problem med, men löste det genom att sätta positionen till absolute
+        och ändra margin till höger och vänster. Det sista jag fixade var att skapa interna länkar på sidan för att kunna klicka på bilden och direkt gå till 
+        produkten. Med hjälp av anchor och ID löste jag det rätt enkelt.<br></br>
+        
+        Arbete hemma: Nu har jag fixat dropdown menyer! De största problemen jag stötte på var att jag sökte upp hjälp på w3school, men de använde sig inte utav flexbox.
+        Därför blev jag tvugnen att ändra mer än planerat. Men efter mycket testande och en extra "dropdown" och "dropdown-content" klass kunde jag lista ut hur
+        man skulle lösa det. All hjälp jag egentligen tog från w3school i slutändan blev att den gick från display none från början till display flex vid hover.
+        Efter mycket jobb blev jag mycket nöjd med resultatet.<br></br>
+    
+        Arbete hemma: Idag har jag suttit hela lektionen med javascript och försökt fixa så att en produkt läggs till i kundvagnen om man trycker på en knapp. Eftersom jag till en början
+        inte hittade något bra javascript till detta som fungerade på det sätt jag ville försökte jag improvisera lite med koden och lyckas inte bli klar.<br></br>
+        
+        Arbete hemma: Jag har nu fixat klart kundvagnen, dock kommer jag kanske försöka lägga till så man kan ta bort items ur kundvagnen. Jag följde nämligen en youtube tutorial för javascriptet
+        och stylade det själv osv, men videon visade inte hur man gjorde dessa knappar fungerbara därför kommer jag försöka experimentera med det själv.<br></br>
+
+        Arbete hemma: Jag har fortsatt försöka fixa så att man kan ta bort items ur kundvagnen, men inget jag har gjort har fungerat. Jag har försökt söka hjälp på google
+        eftersom det egentligen handlar om javascriptet jag inte förstår, men hittar inget hjälpsamt för denna situationen.<br></br>
+
+        Arbete hemma: Idag har jag kollat igenom min kod och försökt strukturera den lite mer, eftersom cssn var något rörig. Jag har också lagt till en modal
+        med extra specifikationer om produkterna när man klickar på bilden på datorn. Jag använde javascriptet från w3school och designade den själv, men eftersom det scriptet
+        endast var till en modal på hela sidan fick jag improvisera lite själv eftersom jag ville ha fyra olika beroende på vilken dator man klickade på. Därför skapade jag fyra modals olika i html 
+        och skapade en individuellt ID till var och en som jag sedan använde display block på för att göra de synliga vid klick. Jag fick också skapa en loop
+        för knappen. Det blev lite rörigt men jag fick använda de få kunskaperna jag har från java som jag har använt innan och testa mig fram + googla.<br></br>
+
+        Sista lektionen: Idag gick jag igenom min kod en extra gång, tog bort test.html sidorna eftersom de inte längre behövs. Test sidorna användes endast för att
+        testa t.ex modals för att inte förstöra min riktiga produkt sida. Jag såg också till så att all kod är rätt formatterad och så att alla länkar fungerar som de ska.<br></br>
+    </body>
+</html>

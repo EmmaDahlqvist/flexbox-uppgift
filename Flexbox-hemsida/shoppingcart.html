@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="css/style.css">
+      <title>Kundvagn</title>
+   </head>
+   <body>
+      <div class="container">
+         <!--Yttre container för allt innehåll-->
+         <div class="header">
+            <!--Container för headern (det över navbar)-->
+            <img src="img/HP-header.jpg" alt="hp header" class="header-img">
+            <div class="header-text">
+               <h1>Kundvagn</h1>
+            </div>
+         </div>
+         <!--Container för navbaren-->
+         <div class="navbar">
+            <div class="dropdown">
+               <!--Hem-->
+               <a href=index.html>
+                  <div class="navbar-item">Hem</div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="index.html#info">Info</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <!--Produkter-->
+               <a href="products.html">
+                  <div class="navbar-item">Produkter</div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="products.html#dream-pc">Drömdator</a>
+                  <a href="products.html#gaming-pc">Speldator</a>
+                  <a href="products.html#work-pc">Arbetsdator</a>
+                  <a href="products.html#all-around-pc">All around dator</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <!--Kontakt-->
+               <a href="contacts.html">
+                  <div class="navbar-item">Kontakt</div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="contacts.html#info">Kontaktuppgifter</a>
+                  <a href="contacts.html#adress">Karta</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <!--Om oss-->
+               <a href="about.html">
+                  <div class="navbar-item">Om oss</div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="about.html#about">Om företaget</a>
+                  <a href="about.html#links">Våra länkar</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <!--Kundvagn-->
+               <a href="shoppingcart.html">
+                  <div class="navbar-item active-item cart">
+                     <img src="img/shoppingcart.png">
+                     (<span>0</span>)
+                  </div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="shoppingcart.html#shoppingcart">Kundvagn</a>
+               </div>
+            </div>
+         </div>
+         <!--Navbar slut-->
+         <div id="title">Kundvagn</div>
+         <!--Titel/Rubrik-->
+         <a id="shoppingcart">
+            <hr>
+         </a>
+         <!--länk till #shoppingcart--> 
+         <div class="main-content">
+            <div class="shoppingcart">
+               <div class="shoppingcart-header">
+                  <h5 class="product-title">Produkt:</h5>
+                  <h5 class="price">Pris:</h5>
+                  <h5 class="quantity">Antal:</h5>
+                  <h5 class="total">Totalt:</h5>
+               </div>
+               <div class="products">
+               </div>
+            </div>
+         </div>
+         <hr style="margin-top: 30px; margin-bottom: 50px;">
+         <div class="footer">
+            <!--Footer-->
+            <div class="footer-item">Författare: Emma Dahlqvist<br>Köp din drömdator idag!</div>
+            <div class="footer-item"><a href="about.html">Om oss</a></div>
+            <div class="footer-item"><img src="img/laptop.png" alt="Laptop" class="footer-img"></div>
+         </div>
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="main.js"></script>
+   </body>
+</html>

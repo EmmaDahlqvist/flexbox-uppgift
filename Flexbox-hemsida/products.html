@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="css/style.css">
+      <title>Produkter</title>
+      <meta name="author" content="Emma Dahlqvist">
+      <meta name="description" content="FlexBox assignment">
+   </head>
+   <body>
+      <div class="container">
+         <!--Yttre container för allt innehåll-->
+         <div class="header">
+            <!--Container för headern (det över navbar)-->
+            <img src="img/HP-header.jpg" alt="hp header" class="header-img">
+            <div class="header-text">
+               <h1>Produkter</h1>
+            </div>
+         </div>
+         <!--Container för navbaren-->
+         <div class="navbar">
+            <div class="dropdown">
+               <!--Hem-->
+               <a href=index.html>
+                  <div class="navbar-item">Hem</div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="index.html#info">Info</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <!--Produkter-->
+               <a href="products.html">
+                  <div class="navbar-item active-item">Produkter</div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="products.html#dream-pc">Drömdator</a>
+                  <a href="products.html#gaming-pc">Speldator</a>
+                  <a href="products.html#work-pc">Arbetsdator</a>
+                  <a href="products.html#all-around-pc">All around dator</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <!--Kontakt-->
+               <a href="contacts.html">
+                  <div class="navbar-item">Kontakt</div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="contacts.html#info">Kontaktuppgifter</a>
+                  <a href="contacts.html#adress">Karta</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <!--Om oss-->
+               <a href="about.html">
+                  <div class="navbar-item">Om oss</div>
+               </a>
+               <div class ="dropdown-content">
+                  <a href="about.html#about">Om företaget</a>
+                  <a href="about.html#links">Våra länkar</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <!--Kundvagn-->
+               <a href="shoppingcart.html">
+                  <div class="navbar-item cart">
+                     <img src="img/shoppingcart.png">
+                     (<span>0</span>)
+                  </div>
+               </a>
+               <div class ="dropdown-content dropdown-cart">
+                  <a href="shoppingcart.html#shoppingcart">Kundvagn</a>
+               </div>
+            </div>
+         </div>
+         <!--Navbar slut-->
+         <div id="title">Överblick över produkter:</div>
+         <!--Titel/Rubrik-->
+         <!--Slides start-->
+         <div class="slide-container">
+            <!--Bilder start-->
+            <div class="slide-image"><a href="#all-around-pc"><img src="img/all-around-pc.jpg"></a></div>
+            <div class="slide-image"><a href="#gaming-pc"><img src="img/gaming-pc.jpg"></a></div>
+            <div class="slide-image"><a href="#work-pc"><img src="img/work-pc.jpg"></a></div>
+            <div class="slide-image"><a href="#dream-pc"><img src="img/dream-pc.jpg"></a></div>
+            <!--Bilder slut-->
+            <div class="button">
+               <button onclick="plusDivs(-1)">&#171;</button>
+               <button onclick="plusDivs(+1)">&#187;</button>
+            </div>
+         </div>
+         <!--Slides slut-->
+         <!--Text över bild start-->
+         <div class="slide-text">Bra dator till det mesta!</div>
+         <div class="slide-text">Fantastisk gaming dator!</div>
+         <div class="slide-text">Perfekt arbetsdator till kontoret eller hemma!</div>
+         <div class="slide-text">Datorn vi drömmer om!</div>
+         <!--Text över bild slut-->
+         <a id="dream-pc">
+            <hr>
+         </a>
+         <div class="main-content">
+            <!--Produkter start-->
+            <div class="item-1">
+               <!--Produkt 1-->
+               Drömdatorn: 
+               <ul>
+                  <li>Fantastisk prestanda</li>
+                  <li>Vattenkylning</li>
+                  <li>1TB SSD</li>
+                  <li class="bold">15900kr</li>
+               </ul>
+               <button class="add-cart add-to-cart" onclick="cartAnimation()">
+                  <ion-icon name="bag-add-outline"></ion-icon>
+                  Lägg till i kundvagn
+               </button>
+            </div>
+            <div class="item-3"><img id="buy-dream-pc" src="img/dream-pc.jpg" alt="Dream pc" title="Klicka för mer information!"></div>
+            <a id="gaming-pc">
+               <hr>
+            </a>
+            <div class="item-1">
+               <!--Produkt 2-->
+               Speldatorn: 
+               <ul>
+                  <li>Perfekt lämpad för gaming</li>
+                  <li>Snabbt grafikkort</li>
+                  <li>Stationär</li>
+                  <li class="bold">11200kr</li>
+               </ul>
+               <button class="add-cart add-to-cart" onclick="cartAnimation()">
+                  <ion-icon name="bag-add-outline"></ion-icon>
+                  Lägg till i kundvagn
+               </button>
+            </div>
+            <div class="item-3"><img src="img/gaming-pc.jpg" alt="Gaming pc" title="Klicka för mer information!"></div>
+            <a id="work-pc">
+               <hr>
+            </a>
+            <div class="item-1">
+               <!--Produkt 3-->
+               Perfekta för jobbet:
+               <ul>
+                  <li>i5 Processor</li>
+                  <li>Lätt och enkel att ta med</li>
+                  <li>21" skräm</li>
+                  <li class="bold">8500kr</li>
+               </ul>
+               <button class="add-cart add-to-cart" onclick="cartAnimation()">
+                  <ion-icon name="bag-add-outline"></ion-icon>
+                  Lägg till i kundvagn
+               </button>
+            </div>
+            <div class="item-3"><img src="img/work-pc.jpg" alt="Work pc" title="Klicka för mer information!"></div>
+            <a id="all-around-pc">
+               <hr>
+            </a>
+            <div class="item-1">
+               <!--Produkt 4-->
+               All around datorn:
+               <ul>
+                  <li>Spela dina favoritspel</li>
+                  <li>Animera din fantasi</li>
+                  <li>Arbeta hemma</li>
+                  <li class="bold">9050kr</li>
+               </ul>
+               <button class="add-cart add-to-cart" onclick="cartAnimation()">
+                  <ion-icon name="bag-add-outline"></ion-icon>
+                  Lägg till i kundvagn
+               </button>
+            </div>
+            <div class="item-3"><img src="img/all-around-pc.jpg" alt="All around pc" title="Klicka för mer information!"></div>
+         </div>
+         <hr style="margin-top: 30px; margin-bottom: 50px;">
+         <div class="footer">
+            <!--Footer-->
+            <div class="footer-item">Författare: Emma Dahlqvist<br>Köp din drömdator idag!</div>
+            <div class="footer-item"><a href="about.html">Om oss</a></div>
+            <div class="footer-item"><img src="img/laptop.png" alt="Laptop" class="footer-img"></div>
+         </div>
+         <!--MODAL för produkter-->
+         <!--Drömdatorn-->
+         <div class="modal" id="modal-dream">
+            <div class="modal-content" >
+               <span class="close">&times;</span>
+               <div class="modal-header">
+                  <h2>Dröm Datorn: Specifikation</h2>
+               </div>
+               <div class="modal-body">
+                  <p>Ryzen 7 | 16GB | 1TB | RTX 3070</p>
+               </div>
+               <div class="modal-footer">
+                  <h3>15.900 kr</h3>
+               </div>
+            </div>
+         </div>
+         <!--Gamingdatorn-->
+         <div class="modal" id="modal-gaming">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-header">
+                  <h2>Gaming Datorn: Specifikation</h2>
+               </div>
+               <div class="modal-body">
+                  <p>i5 | 16GB | 512GB | RTX 3060</p>
+               </div>
+               <div class="modal-footer">
+                  <h3>11.200 kr</h3>
+               </div>
+            </div>
+         </div>
+         <!--Arbetsdator-->
+         <div class="modal" id="modal-work">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-header">
+                  <h2>Arbets Datorn: Specifikation</h2>
+               </div>
+               <div class="modal-body">
+                  <p>i5 | 8GB | 512GB | RTX 3050 | 144Hz</p>
+               </div>
+               <div class="modal-footer">
+                  <h3>8.500 kr</h3>
+               </div>
+            </div>
+         </div>
+         <!--All around datorn-->
+         <div class="modal" id="modal-all">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-header">
+                  <h2>All Around Datorn: Specifikation</h2>
+               </div>
+               <div class="modal-body">
+                  <p>i5 | 16GB | 512GB | RTX 3060Ti</p>
+               </div>
+               <div class="modal-footer">
+                  <h3>9.050 kr</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script> 
+         //En per produkt
+         var modaldream = document.getElementById("modal-dream");
+         var modalgaming = document.getElementById("modal-gaming");
+         var modalwork = document.getElementById("modal-work");
+         var modalall = document.getElementById("modal-all");
+         var container = document.getElementsByClassName("container-outer");
+         
+         //knappen som öppnar modal
+         let button = document.querySelectorAll(".item-3");
+         
+         // Knappen som stänger ner
+         var span = document.getElementsByClassName("close");
+         
+         // När användaren klickar på bilden kommer den gå från display none - display block
+         for(var i = 0; i < button.length; i++) {
+         if(i == 0){
+         button[i].onclick = function() {
+         modaldream.style.display = "block";
+         }
+         }
+         if(i == 1){
+         button[i].onclick = function() {
+         modalgaming.style.display = "block";
+         }
+         }
+         if(i == 2){
+         button[i].onclick = function() {
+         modalwork.style.display = "block";
+         }
+         }
+         if(i == 3){
+         button[i].onclick = function() {
+         modalall.style.display = "block";
+         }
+         }
+         }
+         
+         // För att stänga ner modal
+         for(let spanIndex = 0; spanIndex < span.length; spanIndex++){
+         span[spanIndex].onclick = function() {
+         modaldream.style.display = "none";
+         modalgaming.style.display = "none";
+         modalwork.style.display = "none";
+         modalall.style.display = "none";
+         }
+         }
+         
+         window.onclick = function(event) {
+         if (event.target == container) {
+         modal.style.display = "none";
+         modaldream.style.display = "none";
+         modalgaming.style.display = "none";
+         modalwork.style.display = "none";
+         modalall.style.display = "none";
+         }
+         }
+      </script>
+      <script> //Script för knappar till bildspel
+         var slideIndex = 1;
+         showDivs(slideIndex);
+         
+         function plusDivs(n) {
+         showDivs(slideIndex += n);
+         }
+         function showDivs(n){
+            var i;
+            var x = document.getElementsByClassName("slide-image");
+            var y = document.getElementsByClassName("slide-text");
+            if(n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for(i = 0; i < x.length; i++){
+               x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+         
+            if(n > y.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = y.length} ;
+            for(i = 0; i < y.length; i++){
+               y[i].style.display = "none";
+            }
+            y[slideIndex-1].style.display = "block";
+         }
+      </script>
+      <script src="main.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   </body>
+</html>
